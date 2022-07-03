@@ -46,7 +46,7 @@ body {
 .movies {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .movie {
@@ -96,6 +96,22 @@ body {
             background-color: #fff;
             transition: .2s;
         }
+    }    
+}
+
+.pagination {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    li {
+        margin-right: 5px;
+        padding: 10px;
+        border: 1px solid black;
     }
-    
+    li:hover,
+    li.active {
+        cursor: pointer;
+        color: red;
+        border: 1px solid red;
+    }
 }
